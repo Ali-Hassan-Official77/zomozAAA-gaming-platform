@@ -1,4 +1,6 @@
-import Link from "next/link";import {ArrowLeft,ArrowUpRight,CalendarDays,ExternalLink,Gamepad2,Globe,Monitor,Trophy,Users} from "lucide-react";import {rawgFetch} from "@/lib/rawg";import RatingBadge from "@/components/RatingBadge";import SafeImage from "@/components/SafeImage";import ScreenshotGallery from "@/components/ScreenshotGallery";
+import Link from "next/link";
+export const runtime = 'edge';
+import {ArrowLeft,ArrowUpRight,CalendarDays,ExternalLink,Gamepad2,Globe,Monitor,Trophy,Users} from "lucide-react";import {rawgFetch} from "@/lib/rawg";import RatingBadge from "@/components/RatingBadge";import SafeImage from "@/components/SafeImage";import ScreenshotGallery from "@/components/ScreenshotGallery";
 export const revalidate=1800;
 async function getGame(id){const game=await rawgFetch(`/games/${id}`);let shots=game.short_screenshots||[];try{const extra=await rawgFetch(`/games/${id}/screenshots`,{page_size:20});shots=extra.results||shots}catch{}return {...game,short_screenshots:shots}}
 export async function generateMetadata({params}){try{const g=await getGame(params.id);return {title:`${g.name} — ZoMoZAAA`,description:g.description_raw?.replace(/<[^>]+>/g,"").slice(0,155)||`Explore ${g.name} on ZoMoZAAA.`}}catch{return {title:"Game — ZoMoZAAA"}}}
