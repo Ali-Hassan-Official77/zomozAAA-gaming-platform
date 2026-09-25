@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" role="img" aria-labelledby="title desc">
+  <title id="title">ZoMoZAAA Gaming Logo</title>
+  <desc id="desc">Premium futuristic gaming logo with a stylized Z controller icon and ZoMoZAAA wordmark.</desc>
+  <defs>
+    <linearGradient id="iconGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="42%" stop-color="#2563EB"/>
+      <stop offset="72%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="45%" stop-color="#CBD5E1"/>
+      <stop offset="72%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <path d="M28 45H132L91 86H142L67 174V130H18L78 72H28Z"
+        fill="none" stroke="#22D3EE" stroke-width="9" opacity=".35" filter="url(#glow)"/>
+  <path d="M28 45H132L91 86H142L67 174V130H18L78 72H28Z"
+        fill="url(#iconGrad)" stroke="#E0F2FE" stroke-opacity=".75"
+        stroke-width="2.5" stroke-linejoin="round"/>
+
+  <path d="M43 103C47 92 57 87 69 91L91 98C101 101 108 110 108 120
+           C108 128 104 136 98 139C93 141 88 136 84 130L79 123H59L54 130
+           C50 136 45 141 40 139C33 136 30 127 32 119C34 112 37 107 43 103Z"
+        fill="#050816" stroke="#67E8F9" stroke-width="2.5" filter="url(#softGlow)"/>
+
+  <path d="M48 108H54V114H60V120H54V126H48V120H42V114H48Z" fill="#22D3EE"/>
+  <circle cx="88" cy="111" r="4.5" fill="#A78BFA"/>
+  <circle cx="97" cy="120" r="4.5" fill="#D946EF"/>
+  <circle cx="79" cy="120" r="4.5" fill="#60A5FA"/>
+  <circle cx="88" cy="129" r="4.5" fill="#8B5CF6"/>
+
+  <text x="174" y="137"
+        font-family="Space Grotesk, Manrope, Arial, sans-serif"
+        font-size="92" font-weight="800" letter-spacing="-4"
+        fill="url(#textGrad)">ZoMoZ</text>
+  <text x="505" y="137"
+        font-family="Space Grotesk, Manrope, Arial, sans-serif"
+        font-size="92" font-weight="800" letter-spacing="-4"
+        fill="url(#metal)">AAA</text>
+
+  <rect x="177" y="153" width="168" height="4" rx="2" fill="#22D3EE" opacity=".9"/>
+  <rect x="352" y="153" width="82" height="4" rx="2" fill="#7C3AED" opacity=".85"/>
+  <circle cx="938" cy="119" r="5" fill="#22D3EE"/>
+  <circle cx="954" cy="119" r="5" fill="#A855F7"/>
+</svg>
