@@ -52,6 +52,17 @@ export default function Footer() {
                 API Documentation
               </a>
             </div>
+
+            {/* Contact */}
+            <div className="footer-column">
+              <span className="footer-heading">Contact</span>
+
+              <a href="mailto:gamingpulseofficial56@ranjhagamers.com">
+                gamingpulseofficial56@ranjhagamers.com
+              </a>
+
+              <span className="footer-location">Edinburgh, Scotland</span>
+            </div>
           </div>
         </div>
 
