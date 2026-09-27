@@ -58,7 +58,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} GamingPulse. All rights reserved.
+            © {new Date().getFullYear()} Gaming Pulse. All rights reserved.
           </span>
 
           <div className="footer-meta">

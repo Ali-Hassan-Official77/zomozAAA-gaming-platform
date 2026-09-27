@@ -22,17 +22,17 @@ const sans = Manrope({
 
 export const metadata = {
   title: {
-    default: "GamingPulse — Discover Your Next Obsession",
-    template: "%s | GamingPulse",
+    default: "Gaming Pulse — Discover Your Next Obsession",
+    template: "%s | Gaming Pulse",
   },
 
   description:
-    "GamingPulse is a premium game discovery platform powered by real RAWG game data, ratings, platforms and screenshots.",
+    "Gaming Pulse is a premium game discovery platform powered by real RAWG game data, ratings, platforms and screenshots.",
 
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/gaming-pulse-icon.png",
+    shortcut: "/gaming-pulse-icon.png",
+    apple: "/gaming-pulse-icon.png",
   },
 };
 
