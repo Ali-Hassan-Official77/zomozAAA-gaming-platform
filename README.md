@@ -1,4 +1,4 @@
-# ZoMoZAAA — Premium Gaming Discovery
+# GamingPulse — Premium Gaming Discovery
 
 A production-focused gaming discovery frontend built with Next.js 14, React, Framer Motion and RAWG.
 
@@ -25,7 +25,7 @@ A production-focused gaming discovery frontend built with Next.js 14, React, Fra
 - Skeleton loading states
 - Server-side API proxy so the RAWG key stays server-side
 - Pagination and filters
-- Custom ZoMoZAAA logo and favicon
+- Custom GamingPulse logo and favicon
 - Reduced-motion support
 
 No fake game records or invented ratings are bundled into the application.

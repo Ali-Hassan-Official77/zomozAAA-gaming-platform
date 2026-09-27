@@ -22,12 +22,12 @@ const sans = Manrope({
 
 export const metadata = {
   title: {
-    default: "ZoMoZAAA — Enter Your Next World",
-    template: "%s | ZoMoZAAA",
+    default: "GamingPulse — Discover Your Next Obsession",
+    template: "%s | GamingPulse",
   },
 
   description:
-    "ZoMoZAAA is a premium game discovery platform powered by real RAWG game data, ratings, platforms and screenshots.",
+    "GamingPulse is a premium game discovery platform powered by real RAWG game data, ratings, platforms and screenshots.",
 
   icons: {
     icon: "/favicon.svg",

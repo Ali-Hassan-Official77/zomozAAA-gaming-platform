@@ -6,33 +6,42 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-top">
-          <div>
+          {/* Brand */}
+          <div className="footer-brand">
             <BrandLogo />
 
             <p className="footer-copy">
-              ZoMoZAAA is a visual discovery platform for finding games
-              worth your time, using real catalog data instead of invented
-              content.
+              Discover remarkable games, explore new releases, and find your
+              next favorite experience through a curated gaming discovery
+              platform.
             </p>
           </div>
 
+          {/* Navigation */}
           <div className="footer-links">
-            <div>
-              <span>Explore</span>
+            <div className="footer-column">
+              <span className="footer-heading">Explore</span>
 
               <Link href="/">Home</Link>
-              <Link href="/games">Discover</Link>
+              <Link href="/games">Discover Games</Link>
             </div>
 
-            <div>
-              <span>Data source</span>
+            <div className="footer-column">
+              <span className="footer-heading">Platform</span>
+
+              <Link href="/games">Game Library</Link>
+              <Link href="/games">Popular Games</Link>
+            </div>
+
+            <div className="footer-column">
+              <span className="footer-heading">Information</span>
 
               <a
                 href="https://rawg.io"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                RAWG
+                Data Source
               </a>
 
               <a
@@ -40,29 +49,30 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                API docs
+                API Documentation
               </a>
             </div>
           </div>
         </div>
 
+        {/* Bottom */}
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} ZoMoZAAA
+            © {new Date().getFullYear()} GamingPulse. All rights reserved.
           </span>
 
-          <span>
-            Game data &amp; images from RAWG.io
-          </span>
+          <div className="footer-meta">
+            <span>Gaming discovery platform</span>
 
-          <a
-            href="https://silverloft.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-credit"
-          >
-            Powered by @SilverLoft
-          </a>
+            <a
+              href="https://silverloft.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-credit"
+            >
+              Built by SilverLoft
+            </a>
+          </div>
         </div>
       </div>
     </footer>

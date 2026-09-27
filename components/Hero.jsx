@@ -44,7 +44,7 @@ export default function Hero({ games = [], catalogCount = 0 }) {
             <h1>Enter your next world.</h1>
 
             <p>
-              Add your RAWG key to bring the live catalog to ZoMoZAAA.
+              Add your RAWG key to bring the live catalog to GamingPulse.
             </p>
 
             <SearchBar large />
