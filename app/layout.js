@@ -1,6 +1,6 @@
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-
+export const runtime = 'edge';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";

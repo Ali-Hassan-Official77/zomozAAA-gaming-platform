@@ -1,1 +1,3 @@
-import Link from "next/link";import {ArrowUpRight} from "lucide-react";export default function NotFound(){return <div className="content-shell not-found"><span>404 / LOST SIGNAL</span><h1>That world could not be found.</h1><p>The requested RAWG record may have moved or may not exist.</p><Link href="/games" className="primary-button">Return to discovery <ArrowUpRight size={17}/></Link></div>}
+import Link from "next/link";import {ArrowUpRight} from "lucide-react";
+export const runtime = 'edge';
+export default function NotFound(){return <div className="content-shell not-found"><span>404 / LOST SIGNAL</span><h1>That world could not be found.</h1><p>The requested RAWG record may have moved or may not exist.</p><Link href="/games" className="primary-button">Return to discovery <ArrowUpRight size={17}/></Link></div>}

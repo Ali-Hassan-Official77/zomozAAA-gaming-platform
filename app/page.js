@@ -1,5 +1,6 @@
 import Link from "next/link";import {ArrowUpRight,Gamepad2,Layers3,MonitorPlay,Trophy} from "lucide-react";import Hero from "@/components/Hero";import GameGrid from "@/components/GameGrid";import SectionHeading from "@/components/SectionHeading";import {rawgFetch} from "@/lib/rawg";
 export const revalidate=1800;
+export const runtime = 'edge';
 async function getHomeData(){const [trending,topRated,genres]=await Promise.all([rawgFetch("/games",{ordering:"-added",page_size:7}),rawgFetch("/games",{ordering:"-rating",page_size:8}),rawgFetch("/genres",{page_size:12})]);return {trending:trending.results||[],topRated:topRated.results||[],genres:genres.results||[],count:trending.count||0}}
 export default async function HomePage(){const {trending,topRated,genres,count}=await getHomeData();return <>
  <Hero games={trending} catalogCount={count}/>
